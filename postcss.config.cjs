@@ -1,4 +1,13 @@
-const defaultConfig = require(`@inlinejs/inline-config/postcss.config`);
+// const defaultConfig = require(`@inlinejs/inline-config/postcss.config`);
+// module.exports = {
+//   ...defaultConfig,
+// };
+
 module.exports = {
-  ...defaultConfig,
+  plugins: [
+    require("postcss-import"),
+    require("postcss-nested"),
+    require("postcss-custom-properties"),
+    require("postcss-discard-comments"),
+  ],
 };

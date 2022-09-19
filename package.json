@@ -1,18 +1,40 @@
 {
-  "name": "@example/basics",
+  "name": "@inlinejs/inline",
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Jake Strawn",
+    "url": "https://github.com/himerus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inlinejs/inline.git"
+  },
   "scripts": {
     "prep": "npm-run-all -s prep:*",
-    "prestart": "yarn prep",
+    "prestart": "pnpm prep",
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "pnpm prep",
     "build": "npm-run-all -s build:*",
     "build:turbo": "turbo run build",
     "build:astro": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "npm-run-all -s clean:*",
+    "clean:dist": "rimraf dist && rimraf packages/**/dist",
+    "clean:turbo": "rimraf packages/**/.turbo",
+    "clean:storybook": "rimraf storybook-static",
+    "clean:css": "rimraf packages/**/*.lit.*",
+    "clean:maps": "rimraf packages/**/*.map",
+    "clean:types": "rimraf packages/**/*.d.ts",
+    "reset": "pnpm clean && npm-run-all -s reset:*",
+    "reset:packages": "rimraf packages/**/node_modules",
+    "reset:root": "rimraf ./node_modules",
+    "reset:install": "pnpm install",
+    "restart": "pnpm reset && pnpm start",
+    "rebuild": "pnpm reset && pnpm build"
   },
   "dependencies": {
     "@astrojs/lit": "^1.0.1",
@@ -22,7 +44,13 @@
     "esbuild": "^0.15.8",
     "glob": "^8.0.3",
     "lit": "^2.1.3",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-custom-properties": "^12.1.9",
+    "postcss-discard-comments": "^5.1.2",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^5.0.6",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "turbo": "^1.4.7"

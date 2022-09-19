@@ -3,8 +3,8 @@ import { customElement, property } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
 
 import type { LinkTargetType, LinkRelType } from "./config";
-import componentVars from "./css-variables/vars-link.css.lit";
-import componentStyles from "./inline-link.css.lit";
+import componentVars from "./css-variables/vars-link.css";
+import componentStyles from "./inline-link.css";
 
 /**
  * The Inline  Link component
