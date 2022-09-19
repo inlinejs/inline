@@ -1,0 +1,20 @@
+{
+  "brand": {
+    "primary": { "value": "#2563eb" },
+    "secondary": { "value": "#059669" },
+    "tertiary": { "value": "#dc2626" },
+    "quaternary": { "value": "#d97706" },
+    "quinary": { "value": "#9333ea" },
+    "senary": { "value": "#db2777" },
+    "septenary": { "value": "#4f46e5" },
+    "octonary": { "value": "#525252" },
+    "nonary": { "value": "#1e3a8a" },
+    "denary": { "value": "#171717" }
+  },
+  "status": {
+    "error": { "value": "#c53030" },
+    "warning": { "value": "#b64301" },
+    "info": { "value": "#1e3a8a" },
+    "success": { "value": "#2f855a" }
+  }
+}

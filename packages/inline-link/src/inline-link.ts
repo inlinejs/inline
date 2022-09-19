@@ -41,13 +41,13 @@ export class InlineLink extends LitElement {
    * Link target
    */
   @property({ type: String, attribute: "link-target" })
-  linkTarget: LinkTargetType;
+  linkTarget!: LinkTargetType;
 
   /**
    * Link rel
    */
   @property({ type: String, attribute: "link-rel" })
-  linkRel: LinkRelType;
+  linkRel!: LinkRelType;
 
   /**
    * This methodology allows us to create a component that can use properties

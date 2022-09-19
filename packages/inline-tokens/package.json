@@ -1,0 +1,39 @@
+{
+  "name": "@phase2/inline-tokens",
+  "version": "0.0.1",
+  "description": "The Inline Components for the web styled text component",
+  "keywords": [
+    "inline components",
+    "inline design",
+    "design tokens"
+  ],
+  "files": [
+    "/dist/",
+    "!/dist/tsconfig.build.tsbuildinfo"
+  ],
+  "author": "Phase2 Technology",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phase2/inline.git",
+    "directory": "packages/inline-tokens"
+  },
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "sd-init": "style-dictionary init basic",
+    "prebuild": "node ../../scripts/clean.js",
+    "build": "style-dictionary build --config ./config.json",
+    "package": "yarn publish"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.1"
+  }
+}

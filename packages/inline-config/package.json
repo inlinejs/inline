@@ -1,0 +1,34 @@
+{
+  "name": "@inlinejs/inline-config",
+  "version": "0.0.1",
+  "description": "Primary Inline configuration files.",
+  "keywords": [
+    "inline",
+    "web-components",
+    "design system"
+  ],
+  "main": "index.ts",
+  "types": "index.ts",
+  "typings": "index.d.ts",
+  "files": [
+    "*"
+  ],
+  "author": "Phase2 Technology",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inlinejs/inline.git",
+    "directory": "packages/inline-config"
+  },
+  "scripts": {
+    "package": "yarn publish"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./commitlint.config": "./commitlint.config.js",
+    "./postcss.config": "./postcss.config.js"
+  }
+}
