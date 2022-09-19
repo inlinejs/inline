@@ -1,0 +1,52 @@
+:host,
+a,
+::slotted(a) {
+  font-family: var(--ff-body);
+  text-decoration: var(
+    --inline-link-color-default-decoration,
+    var(--inline--link-default-color-default-decoration)
+  );
+  color: var(
+    --inline-link-color-default,
+    var(--inline--link-default-color-default)
+  );
+  transition-property: var(
+    --inline-link-transition-property,
+    var(--inline--link-default-transition-property)
+  );
+  transition-timing-function: var(
+    --inline-link-transition-timing-function,
+    var(--inline--link-default-transition-timing-function)
+  );
+  transition-duration: var(
+    --inline-link-transition-duration,
+    var(--inline--link-default-transition-duration)
+  );
+}
+
+:host(:hover),
+a:hover,
+::slotted(a:hover) {
+  text-decoration: var(
+    --inline-link-color-hover-decoration,
+    var(--inline--link-default-color-hover-decoration)
+  );
+  color: var(
+    --inline-link-color-hover,
+    var(--inline--link-default-color-hover)
+  );
+}
+
+:host(:focus),
+a:focus,
+::slotted(a:focus) {
+  text-decoration: var(
+    --inline-link-color-focus-decoration,
+    var(--inline--link-default-color-focus-decoration)
+  );
+  color: var(
+    --inline-link-color-focus,
+    var(--inline--link-default-color-focus)
+  );
+  inline: none;
+}

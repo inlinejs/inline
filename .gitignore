@@ -16,5 +16,8 @@ pnpm-debug.log*
 .env
 .env.production
 
-# macOS-specific files
+# macOS specific files
 .DS_Store
+
+#VSCode specific files
+.history
