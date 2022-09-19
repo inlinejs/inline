@@ -99,6 +99,6 @@ export default css`
       --inline-link-color-focus,
       var(--inline--link-default-color-focus)
     );
-    inline: none;
+    outline: none;
   }
 `;

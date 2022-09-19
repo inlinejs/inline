@@ -3,5 +3,23 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "moduleResolution": "node",
-  }
+    "baseUrl": ".",
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": false
+  },
+  "paths": {
+    "@inlinejs/*": ["packages/*"]
+  },
+  "include": ["packages/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/node_modules/*",
+    "**/coverage/*",
+    "**/dist/**/*",
+  ]
 }

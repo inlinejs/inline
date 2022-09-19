@@ -8,8 +8,7 @@
     "design tokens"
   ],
   "files": [
-    "/dist/",
-    "!/dist/tsconfig.build.tsbuildinfo"
+    "/dist/"
   ],
   "author": "Phase2 Technology",
   "repository": {
@@ -20,7 +19,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "sd-init": "style-dictionary init basic",
-    "prebuild": "node ../../scripts/clean.js",
+    "prebuild": "node ../../scripts/clean.cjs",
     "build": "style-dictionary build --config ./config.json",
     "package": "yarn publish"
   },

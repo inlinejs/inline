@@ -4,5 +4,5 @@
     "rootDir": ".",
     "outDir": "./dist"
   },
-  "include": ["index.ts", "src/**/*", "tests/**/*", "src/css-variables/vars-link.css/.ts"],
+  "include": ["index.ts", "src/**/*", "tests/**/*"],
 }
