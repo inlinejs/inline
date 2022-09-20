@@ -1,21 +1,24 @@
 ---
-import "../../inline.tokens.css";
 import "@inlinejs/inline-link";
+import "@inlinejs/inline-tokens/inline.tokens.css";
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Inline.">
   <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1>Welcome to <span class="text-gradient">InlineJS</span></h1>
     <p class="instructions">
       Check out the <code>src/pages</code> directory to get started.<br />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
     </p>
-
+    <hr />
     <ul>
-      <li><inline-link><a href="https://google.com">This is a link created with an Inline Web Component</a></inline-link></li>
+      <li><inline-link><a href="https://google.com">Slotted &lt;inline-link&gt; component.</a></inline-link></li>
+      <li><inline-link link-href="https://google.com">Slotted + Propped &lt;inline-link&gt; component.</inline-link></li>
+      <li><inline-link link-href="https://google.com" link-text="Fully Propped &lt;inline-link&gt; component."></inline-link></li>
     </ul>
+    <hr />
     <ul role="list" class="link-card-grid">
       <Card
         href="https://docs.astro.build/"

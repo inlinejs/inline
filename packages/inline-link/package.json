@@ -14,7 +14,10 @@
   "files": [
     "/dist/"
   ],
-  "author": "Jake Strawn",
+  "author": {
+    "name": "Jake Strawn",
+    "url": "https://github.com/himerus"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",

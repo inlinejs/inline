@@ -1,7 +1,7 @@
 {
-  "name": "@inlinejs/inline-config",
+  "name": "@inlinejs/inline-element",
   "version": "0.0.1",
-  "description": "Primary Inline configuration files.",
+  "description": "Primary Inline Component wrapper.",
   "keywords": [
     "inline",
     "web-components",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
-    "directory": "packages/inline-config"
+    "directory": "packages/inline-element"
   },
   "scripts": {
     "package": "yarn publish"
@@ -28,8 +28,6 @@
     "access": "public"
   },
   "exports": {
-    "./inline.config": "./inline.config.js",
-    "./commitlint.config": "./commitlint.config.js",
-    "./postcss.config": "./postcss.config.js"
+    ".": "./index.ts"
   }
 }

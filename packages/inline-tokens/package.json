@@ -1,5 +1,5 @@
 {
-  "name": "@phase2/inline-tokens",
+  "name": "@inlinejs/inline-tokens",
   "version": "0.0.1",
   "description": "The Inline Components for the web styled text component",
   "keywords": [
@@ -10,27 +10,25 @@
   "files": [
     "/dist/"
   ],
-  "author": "Phase2 Technology",
+  "author": {
+    "name": "Jake Strawn",
+    "url": "https://github.com/himerus"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/phase2/inline.git",
+    "url": "https://github.com/inlinejs/inline.git",
     "directory": "packages/inline-tokens"
   },
   "license": "BSD-3-Clause",
   "scripts": {
-    "sd-init": "style-dictionary init basic",
-    "prebuild": "node ../../scripts/clean.cjs",
     "build": "style-dictionary build --config ./config.json",
     "package": "yarn publish"
-  },
-  "dependencies": {
-    "tslib": "^2.1.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "exports": {
-    ".": "./index.ts"
+    "./inline.tokens.css": "./inline.tokens.css"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1"

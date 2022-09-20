@@ -3,21 +3,11 @@
   "platforms": {
     "css": {
       "transformGroup": "css",
-      "buildPath": "dist/css/",
+      "buildPath": "./",
       "files": [
         {
           "destination": "inline.tokens.css",
           "format": "css/variables"
-        }
-      ]
-    },
-    "scss": {
-      "transformGroup": "scss",
-      "buildPath": "dist/scss/",
-      "files": [
-        {
-          "destination": "_inline.tokens.scss",
-          "format": "scss/variables"
         }
       ]
     }

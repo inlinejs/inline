@@ -1,10 +1,10 @@
-import { html, TemplateResult, CSSResultGroup, LitElement } from "lit";
+import { html, TemplateResult, CSSResultGroup } from "lit";
+import { InlineElement } from "@inlinejs/inline-element";
 import { customElement, property } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
-
 import type { LinkTargetType, LinkRelType } from "./config";
-import componentVars from "./css-variables/vars-link.css";
-import componentStyles from "./inline-link.css";
+import componentVars from "./css-variables/vars-link.css.lit";
+import componentStyles from "./inline-link.css.lit";
 
 /**
  * The Inline  Link component
@@ -13,18 +13,21 @@ import componentStyles from "./inline-link.css";
  * @extends InlineElement
  * @slot - The default slot for this element.
  * @cssprop --inline-link-transition-property: The CSS transition property to use for the link.
- * @cssprop --inline-link-transition-duration: The CSS transition duration to use for the link.
  * @cssprop --inline-link-transition-timing-function: The CSS transition timing function to use for the link.
- * @cssprop --inline-link-color-default: The default link color.
- * @cssprop --inline-link-color-default-decoration: Text decoration for the default link.
+ * @cssprop --inline-link-transition-duration: The CSS transition duration to use for the link.
+ * @cssprop --inline-link-transition-delay: The CSS transition delay to use for the link.
+ * @cssprop --inline-link-ff: The CSS font-family to use for the link.
+ * @cssprop --inline-link-color: The default link color.
+ * @cssprop --inline-link-decoration: Text decoration for the default link.
  * @cssprop --inline-link-color-hover: The link color when hovering on the link.
- * @cssprop --inline-link-color-hover-decoration: Text decoration for the link when hovering.
+ * @cssprop --inline-link-hover-decoration: Text decoration for the link when hovering.
  * @cssprop --inline-link-color-focus: The link color when focusing on the link.
- * @todo - Add support for inline/ring on the focus state of the link.
+ * @todo - Add better support for outline/ring on the focus state of the link.
  */
 @customElement("inline-link")
-export class InlineLink extends LitElement {
+export class InlineLink extends InlineElement {
   static styles: CSSResultGroup = [componentVars, componentStyles];
+
   /**
    * Link url
    */
