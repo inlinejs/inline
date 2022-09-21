@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "prep": "npm-run-all -s prep:*",
-    "prep:css": "node scripts/styles.cjs",
+    "prep:css": "node scripts/css-literals.cjs",
     "prestart": "yarn prep",
     "dev": "npm-run-all -p dev:*",
     "dev:astro": "astro dev",
