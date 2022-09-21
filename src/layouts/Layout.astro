@@ -2,7 +2,7 @@
 export interface Props {
 	title: string;
 }
-
+import inlineVariables from '@inlinejs/inline-tokens/inline.tokens.css?url';
 const { title } = Astro.props;
 ---
 
@@ -13,6 +13,8 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- <link rel="stylesheet" href={demoFonts} /> -->
+		<link rel="stylesheet" href={inlineVariables} />
 		<title>{title}</title>
 	</head>
 	<body>
@@ -20,8 +22,6 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style>
-	@import url('https://rsms.me/inter/inter.css');
-	@import "@inlinejs/inline-tokens/inline.tokens.css";
 	:root {
 		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
