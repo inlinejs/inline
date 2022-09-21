@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 #VSCode specific files
 .history
+
+#Inline speific files
+*.lit.ts

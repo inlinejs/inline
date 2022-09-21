@@ -1,8 +1,12 @@
 module.exports = {
   plugins: [
-    require("postcss-import"),
-    require("postcss-nested"),
-    require("postcss-custom-properties"),
-    require("postcss-discard-comments"),
+    require("postcss-preset-env", {
+      // @todo: Deterine the appropriate stage to rely on.
+      stage: 2,
+    }),
+    require("cssnano")({
+      // @todo: Comment removal isn't working here.
+      preset: ["advanced", { discardComments: { removeAll: true } }],
+    }),
   ],
 };

@@ -23,7 +23,6 @@ a,
   font-family: var(--inline-link-ff, var(--inline-link-ff-default));
 
   color: var(--inline-link-color, var(--inline-link-color-default));
-  color: #ff0000;
 
   text-decoration: var(
     --inline-link-decoration,
