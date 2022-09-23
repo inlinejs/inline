@@ -2,6 +2,7 @@
 dist/
 .output/
 .turbo/
+.turbo-cookie
 
 # dependencies
 node_modules/

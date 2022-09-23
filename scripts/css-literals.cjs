@@ -70,7 +70,7 @@ const createVariableLiterals = (result, path) => {
 import { css } from 'lit';
 export default css\`
 :host {
-${result.css}\`;`,
+${result.css}}\`;`,
     () => true
   );
 };

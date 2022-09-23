@@ -1,23 +1,23 @@
 /**
  * Do not edit directly
- * Generated on Wed, 21 Sep 2022 11:07:49 GMT
+ * Generated on Fri, 23 Sep 2022 13:49:51 GMT
  */
 
 :root {
-  --brand-primary: #2563eb;
-  --brand-secondary: #059669;
-  --brand-tertiary: #dc2626;
-  --brand-quaternary: #d97706;
-  --brand-quinary: #9333ea;
-  --brand-senary: #db2777;
-  --brand-septenary: #4f46e5;
-  --brand-octonary: #525252;
-  --brand-nonary: #1e3a8a;
-  --brand-denary: #171717;
-  --status-error: #c53030;
-  --status-warning: #b64301;
-  --status-info: #1e3a8a;
-  --status-success: #2f855a;
+  --color-brand-primary: #2563eb;
+  --color-brand-secondary: #059669;
+  --color-brand-tertiary: #dc2626;
+  --color-brand-quaternary: #d97706;
+  --color-brand-quinary: #9333ea;
+  --color-brand-senary: #db2777;
+  --color-brand-septenary: #4f46e5;
+  --color-brand-octonary: #525252;
+  --color-brand-nonary: #1e3a8a;
+  --color-brand-denary: #171717;
+  --color-status-error: #c53030;
+  --color-status-warning: #b64301;
+  --color-status-info: #1e3a8a;
+  --color-status-success: #2f855a;
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;
   --color-slate-200: #e2e8f0;

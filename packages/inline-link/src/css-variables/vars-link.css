@@ -6,11 +6,11 @@
 
 --inline-link-ff-default: var(--ff-body);
 
---inline-link-color-default: var(--color-red-600);
---inline-link-decoration-default: none;
+--inline-link-color-default: var(--color-sky-700);
+--inline-link-decoration-default: underline;
 
---inline-link-color-hover-default: var(--color-gray-600);
---inline-link-decoration-hover-default: underline;
+--inline-link-color-hover-default: var(--color-sky-900);
+--inline-link-decoration-hover-default: none;
 
---inline-link-color-focus-default: var(--color-gray-600);
---inline-link-decoration-focus-default: underline;
+--inline-link-color-focus-default: var(--color-sky-900);
+--inline-link-decoration-focus-default: none;
