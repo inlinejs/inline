@@ -46,6 +46,7 @@
     "analyze": "yarn build && wca analyze 'packages/**/*.ts' --outFiles '{dir}/../README.md' "
   },
   "dependencies": {
+    "doxicity": "^1.0.0-beta.4",
     "web-component-analyzer": "^2.0.0-next.4"
   },
   "devDependencies": {
