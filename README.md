@@ -1,18 +1,18 @@
-# Welcome to [Astro](https://astro.build)
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
+# Welcome to [InineJS](https://github.com/inlinejs/inline)
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
+```txt
 /
+├── packages/
+│   ├── inline-config/
+│   │   ├── src/
+│   │   └── index.ts
+│   ├── inline-tokens/
+│   │   ├── src/
+│   │   └── index.ts
 ├── public/
 │   └── favicon.svg
 ├── src/
@@ -31,19 +31,37 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+Any primary Web Component and helper packages intended for publishing to the NPM package repository, and utilized by consumer applications.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
+### Primary Commands
+
+> Primary commands consist of the the majority of the most frequently used commands
+> during day to day development of an InlineJS project.
+
+| Command                | Action                                                             |
+| :--------------------- | :----------------------------------------------------------------- |
+| `yarn install`         | Installs project dependencies                                      |
+| `yarn start`           | Starts local dev server at `localhost:3000`                        |
+| `yarn build`           | Run all build commands using the pattern build:*                   |
+| `yarn clean`           | Run all cleanup commands using the pattern clean:*                 |
+| `yarn reset`           | Run `yarn clean` followed by  commands using the pattern reset:*   |
+| `yarn build`           | Run all build commands using the pattern build:*                   |
+
+### Secondary Commands
+
+> Most secondary commands are called by a primary command either directly, or with `npm-run-all`.
+
 | Command                | Action                                             |
 | :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+| `yarn dev`             | Alias of `yarn start`, enabling development mode   |
+| `yarn prep`            | Does stuff and things                              |
+| `yarn prestart`        | Does stuff and things                              |
+| `yarn prebuild`        | Does stuff and things                              |
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Look for more documentation in the near future!

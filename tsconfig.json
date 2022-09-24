@@ -4,12 +4,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "baseUrl": ".",
-    "emitDeclarationOnly": true,
     "isolatedModules": true,
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "resolveJsonModule": true
   },
   "paths": {
     "@inlinejs/*": ["packages/*"]

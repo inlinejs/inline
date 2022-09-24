@@ -28,6 +28,7 @@
     "access": "public"
   },
   "exports": {
+    ".": "./index.ts",
     "./inline.tokens.css": "./inline.tokens.css"
   },
   "devDependencies": {

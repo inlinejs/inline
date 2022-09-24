@@ -1,0 +1,27 @@
+section {
+  /**
+   * Calculated values.
+   */
+  --gap-count: calc(var(--grid-column--max-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-column-gap));
+  --grid-item--max-width: calc(
+    (100% - var(--total-gap-width)) / var(--grid-column--max-count)
+  );
+
+  display: grid;
+  grid-template-columns: var(
+    --grid-template-columns,
+    repeat(
+      auto-fill,
+      minmax(
+        max(var(--grid-item--min-width), var(--grid-item--max-width)),
+        '1fr'
+      )
+    )
+  );
+  grid-template-rows: var(--grid-template-rows, '1fr');
+  grid-column-gap: var(--grid-column-gap, '1rem');
+  grid-row-gap: var(--grid-row-gap, '1rem');
+  justify-items: var(--justify-items, 'auto');
+  align-items: var(--align-items, 'auto');
+}
