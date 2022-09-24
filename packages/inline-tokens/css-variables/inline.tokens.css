@@ -1,4 +1,7 @@
 :root {
+  --color-system-white: #ffffff;
+  --color-system-black: #000000;
+  --color-system-transparent: rgba(0, 0, 0, 0);
   --color-brand-primary: #2563eb;
   --color-brand-secondary: #059669;
   --color-brand-tertiary: #dc2626;

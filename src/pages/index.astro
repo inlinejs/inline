@@ -1,5 +1,6 @@
 ---
 import "@inlinejs/inline-link";
+import "@inlinejs/inline-alert";
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
@@ -10,6 +11,10 @@ import Card from "../components/Card.astro";
 <Layout title="Welcome to Inline.">
   <main>
     <h1>Welcome to <span class="text-gradient">InlineJS</span></h1>
+    <inline-alert alert-type="info">
+      <p>InlineJS is a collection of web components that can be used in any framework.</p>
+    </inline-alert>
+    
     <p class="instructions">
       Check out the <code>src/pages</code> directory to get started.
     </p>

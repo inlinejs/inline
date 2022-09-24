@@ -1,5 +1,10 @@
 {
   "color": {
+    "system": {
+      "white": { "value": "#FFF" },
+      "black": { "value": "#000" },
+      "transparent": { "value": "transparent" }
+    },
     "brand": {
       "primary": { "value": "#2563eb" },
       "secondary": { "value": "#059669" },

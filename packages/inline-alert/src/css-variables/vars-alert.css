@@ -1,0 +1,15 @@
+--inline-alert-info-background-default: var(--color-system-white);
+--inline-alert-info-text-default: var(--color-status-info);
+--inline-alert-info-border-default: var(--color-status-info);
+
+--inline-alert-success-background-default: var(--color-system-white);
+--inline-alert-success-text-default: var(--color-status-success);
+--inline-alert-success-border-default: var(--color-status-success);
+
+--inline-alert-warning-background-default: var(--color-system-white);
+--inline-alert-warning-text-default: var(--color-status-warning);
+--inline-alert-warning-border-default: var(--color-status-warning);
+
+--inline-alert-error-background-default: var(--color-system-white);
+--inline-alert-error-text-default: var(--color-status-error);
+--inline-alert-error-border-default: var(--color-status-error);

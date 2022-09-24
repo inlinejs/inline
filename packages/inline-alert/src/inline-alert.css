@@ -1,0 +1,68 @@
+.alert-body {
+  display: block;
+  border-width: 0;
+  border-left-width: 8px;
+  border-style: solid;
+  padding: 1rem;
+}
+
+.alert-header {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+}
+
+:host([alert-type="info"]) .alert-body {
+  background-color: var(
+    --inline-alert-info-background,
+    var(--inline-alert-info-background-default)
+  );
+  border-color: var(
+    --inline-alert-info-border,
+    var(--inline-alert-info-border-default)
+  );
+  color: var(--inline-alert-info-text, var(--inline-alert-info-text-default));
+}
+
+:host([alert-type="warning"]) .alert-body {
+  background-color: var(
+    --inline-alert-warning-background,
+    var(--inline-alert-warning-background-default)
+  );
+  border-color: var(
+    --inline-alert-warning-border,
+    var(--inline-alert-warning-border-default)
+  );
+  color: var(
+    --inline-alert-warning-text,
+    var(--inline-alert-warning-text-default)
+  );
+}
+
+:host([alert-type="error"]) .alert-body {
+  background-color: var(
+    --inline-alert-error-background,
+    var(--inline-alert-error-background-default)
+  );
+  border-color: var(
+    --inline-alert-error-border,
+    var(--inline-alert-error-border-default)
+  );
+  color: var(--inline-alert-error-text, var(--inline-alert-error-text-default));
+}
+
+:host([alert-type="success"]) .alert-body {
+  background-color: var(
+    --inline-alert-success-background,
+    var(--inline-alert-success-background-default)
+  );
+  border-color: var(
+    --inline-alert-success-border,
+    var(--inline-alert-success-border-default)
+  );
+  color: var(
+    --inline-alert-success-text,
+    var(--inline-alert-success-text-default)
+  );
+}
