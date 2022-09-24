@@ -6,7 +6,7 @@
       "buildPath": "./",
       "files": [
         {
-          "destination": "inline.tokens.css",
+          "destination": "css-variables/inline.tokens.css",
           "format": "css/variables",
           "options": {
             "showFileHeader": false

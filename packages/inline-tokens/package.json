@@ -29,7 +29,7 @@
   },
   "exports": {
     ".": "./index.ts",
-    "./inline.tokens.css": "./inline.tokens.css"
+    "./css": "./css-variables/inline.tokens.css"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1"
