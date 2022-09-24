@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Core functionality that is shared across all Inline Web Components",
   "keywords": [
-    "outline",
-    "web-components",
+    "web components",
     "design system"
   ],
   "main": "index.ts",

@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "The Inline Components for the web alert component",
   "keywords": [
-    "outline components",
-    "outline design",
+    "web component",
     "alert"
   ],
   "main": "index.ts",

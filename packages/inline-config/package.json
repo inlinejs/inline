@@ -4,7 +4,7 @@
   "description": "Primary Inline configuration files.",
   "keywords": [
     "inline",
-    "web-components",
+    "web components",
     "design system"
   ],
   "main": "index.ts",
