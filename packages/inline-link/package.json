@@ -25,6 +25,7 @@
   },
   "license": "BSD-3-Clause",
   "scripts": {
+    "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"
   },

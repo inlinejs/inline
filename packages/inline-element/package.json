@@ -21,6 +21,8 @@
     "directory": "packages/inline-element"
   },
   "scripts": {
+    "prebuild": "node ../../scripts/clean.cjs",
+    "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"
   },
   "dependencies": {},
