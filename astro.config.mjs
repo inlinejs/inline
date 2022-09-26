@@ -11,14 +11,15 @@ export default defineConfig({
     },
   },
   integrations: [
-    // Enable support for MDX.
-    mdx(),
     // Enable Preact to support Preact JSX components.
     preact(),
     // Enable React for the Algolia search component.
     react(),
     // Enable Lit for Web Component integration.
     lit(),
+    // Enable support for MDX.
+    mdx(),
   ],
-  site: `http://localhost:3000/`,
+  site: "https://inlinejs.github.io",
+  outDir: "./docs",
 });

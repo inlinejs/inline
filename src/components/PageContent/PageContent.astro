@@ -1,6 +1,6 @@
 ---
 import type { Frontmatter } from '../../config';
-// import MoreMenu from '../RightSidebar/MoreMenu.astro';
+import MoreMenu from '../RightSidebar/MoreMenu.astro';
 import TableOfContents from '../RightSidebar/TableOfContents';
 import type { MarkdownHeading } from 'astro';
 
@@ -22,9 +22,9 @@ const title = frontmatter.title;
 		</nav>
 		<slot />
 	</section>
-	<!-- <nav class="block sm:hidden">
+	<nav class="block sm:hidden">
 		<MoreMenu editHref={githubEditUrl} />
-	</nav> -->
+	</nav>
 </article>
 
 <style>

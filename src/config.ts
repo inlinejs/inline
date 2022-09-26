@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export const SITE = {
   title: "InlineJS",
   description: "InlineJS Design System.",
@@ -32,7 +34,7 @@ export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
 export const GITHUB_EDIT_URL = `https://github.com/inlinejs/inline`;
 
-export const COMMUNITY_INVITE_URL = `https://github.com/inlinejs/inline`;
+export const COMMUNITY_INVITE_URL = `https://discord.gg/U9hr82Cr`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
@@ -43,16 +45,16 @@ export const ALGOLIA = {
 
 export type Sidebar = Record<
   typeof KNOWN_LANGUAGE_CODES[number],
-  Record<string, { text: string; link: string }[]>
+  Record<string, { text: string; link: string; type: string }[]>
 >;
 export const SIDEBAR: Sidebar = {
   en: {
     Documentation: [
-      { text: "Introduction", link: "en/introduction" },
-      { text: "Page 2", link: "en/page-2" },
-      { text: "Page 3", link: "en/page-3" },
+      { text: "Introduction", link: "en/introduction", type: "mdx" },
+      { text: "Page 2", link: "en/page-2", type: "md" },
+      { text: "Page 3", link: "en/page-3", type: "md" },
     ],
-    "Design Tokens": [{ text: "Page 4", link: "en/page-4" }],
-    "Component Library": [{ text: "Page 5", link: "en/page-5" }],
+    "Design Tokens": [{ text: "Page 4", link: "en/page-4", type: "md" }],
+    "Component Library": [{ text: "Page 5", link: "en/page-5", type: "md" }],
   },
 };
