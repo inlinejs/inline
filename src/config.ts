@@ -32,7 +32,7 @@ export const KNOWN_LANGUAGES = {
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
-export const GITHUB_EDIT_URL = `https://github.com/inlinejs/inline`;
+export const GITHUB_EDIT_URL = `https://github.com/inlinejs/inline/blob/main`;
 
 export const COMMUNITY_INVITE_URL = `https://discord.gg/U9hr82Cr`;
 
