@@ -12,8 +12,29 @@ layout: ../../layouts/MainLayout.astro
 
 ### `inline-alert`
 
+<inline-alert statusType="warning" size="large">
+  <span slot="header">Status: Experimental</span>
+  <div>
+    This documentation and information is still in a highly experimental
+    development stage as we explore new and unique solutions to old hand mis.
+  </div>
+</inline-alert>
+
 ### `inline-link`
 
+<ul>
+  <li>
+    <inline-link>
+      <a href="/">Link (Fully Slotted)</a>
+    </inline-link>
+  </li>
+  <li>
+    <inline-link link-href="/">Link (Slot + Properties)</inline-link>
+  </li>
+  <li>
+    <inline-link link-href="/" link-text="Link (All Properties)"></inline-link>
+  </li>
+</ul>
 ## Features
 
 This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
