@@ -43,6 +43,7 @@ export const ALGOLIA = {
   apiKey: "8022fc943afa4d88a3e0dcc9288e2060",
 };
 
+// @todo: Implement an automated solution for this sidebar navigation.
 export type Sidebar = Record<
   typeof KNOWN_LANGUAGE_CODES[number],
   Record<string, { text: string; link: string }[]>
