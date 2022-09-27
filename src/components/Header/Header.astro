@@ -13,6 +13,10 @@ type Props = {
 
 const { currentPage } = Astro.props as Props;
 const lang = getLanguageFromURL(currentPage);
+
+import "@inlinejs/inline-alert";
+import "@inlinejs/inline-link";
+
 ---
 
 <header>

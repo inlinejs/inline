@@ -49,12 +49,13 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
   en: {
-    Documentation: [
-      { text: "Introduction", link: "en/introduction" },
-      { text: "Page 2", link: "en/page-2" },
-      { text: "Page 3", link: "en/page-3" },
+    Documentation: [{ text: "Introduction", link: "en/introduction" }],
+    "Design Tokens": [
+      { text: "Color Tokens", link: "en/design-tokens/colors" },
     ],
-    "Design Tokens": [{ text: "Page 4", link: "en/page-4" }],
-    "Component Library": [{ text: "Page 5", link: "en/page-5" }],
+    "Component Library": [
+      { text: "InlineAlert", link: "en/components/inline-alert" },
+      { text: "InlineLink", link: "en/components/inline-link" },
+    ],
   },
 };
