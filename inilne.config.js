@@ -1,4 +1,4 @@
-const defaultConfig = require(`@phase2/inline-config/inline.config`);
+const defaultConfig = require(`@inlinejs/inline-config/inline.config`);
 module.exports = {
   ...defaultConfig,
 };
