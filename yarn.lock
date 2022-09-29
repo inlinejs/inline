@@ -2927,7 +2927,7 @@ lit-html@^2.0.0, lit-html@^2.2.0, lit-html@^2.3.0:
   dependencies:
     "@types/trusted-types" "^2.0.2"
 
-lit@^2.0.0, lit@^2.0.2, lit@^2.1.3, lit@^2.3.0, lit@^2.3.1:
+lit@^2.0.0, lit@^2.0.2, lit@^2.2.5, lit@^2.3.0, lit@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/lit/-/lit-2.3.1.tgz#2cf1c2042da1e44c7a7cc72dff2d72303fd26f48"
   integrity sha512-TejktDR4mqG3qB32Y8Lm5Lye3c8SUehqz7qRsxe1PqGYL6me2Ef+jeQAEqh20BnnGncv4Yxy2njEIT0kzK1WCw==

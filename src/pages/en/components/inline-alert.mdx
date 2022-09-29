@@ -4,11 +4,13 @@ description: Documentation for the inline-alert component from @inlinejs/inline-
 layout: ../../../layouts/MainLayout.astro
 ---
 
+import { InlineAlert } from "@inlinejs/inline-alert";
+
 This page will walk through usage and samples of the `inline-alert` component.
 
 ## Component Status
 
-<inline-alert statusType="warning" size="large">
+<inline-alert alert-type="warning" size="large" client:load>
   <span slot="header">Status: Experimental</span>
   <div>
     This documentation and information is still in a highly experimental
@@ -20,7 +22,7 @@ This page will walk through usage and samples of the `inline-alert` component.
 
 ### Size: Large
 
-<inline-alert statusType="info" size="large">
+<inline-alert alert-type="info" size="large">
   <span slot="header">Header Text</span>
   <div>
     This documentation and information is still in a highly experimental
@@ -30,7 +32,7 @@ This page will walk through usage and samples of the `inline-alert` component.
 
 ### Size: Small
 
-<inline-alert statusType="info" size="small">
+<inline-alert alert-type="info" size="small">
   <span slot="header">Header Text</span>
   <div>
     This documentation and information is still in a highly experimental
