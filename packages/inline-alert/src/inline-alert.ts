@@ -24,8 +24,6 @@ export interface InlineAlertInterface extends HTMLElement {
   isInteractive: boolean;
 }
 
-export const tagName = "inline-alert";
-
 /**
  * The Inline Alert component
  *
