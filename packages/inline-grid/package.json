@@ -1,9 +1,8 @@
 {
-  "name": "@inlinejs/inline-element",
+  "name": "@inlinejs/inline-grid",
   "version": "0.0.1",
-  "description": "Primary Inline Component wrapper.",
+  "description": "Core functionality that is shared across all Inline Web Components",
   "keywords": [
-    "inline",
     "web components",
     "design system"
   ],
@@ -11,7 +10,7 @@
   "types": "index.ts",
   "typings": "index.d.ts",
   "files": [
-    "*"
+    "/dist/"
   ],
   "author": {
     "name": "Jake Strawn",
@@ -21,14 +20,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
-    "directory": "packages/inline-element"
+    "directory": "packages/inline-grid"
   },
   "scripts": {
     "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@inlinejs/inline-config": "^0.0.1",
+    "lit": "^2.0.2"
+  },
   "publishConfig": {
     "access": "public"
   },

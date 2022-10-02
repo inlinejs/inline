@@ -2,20 +2,27 @@ import { TemplateResult, html, CSSResultGroup } from "lit";
 import { InlineElement } from "@inlinejs/inline-element";
 import { customElement, property } from "lit/decorators.js";
 import { styleMap } from "lit/directives/style-map.js";
-import componentStyles from "./inline-card-group.css.lit";
+import componentStyles from "./inline-grid.css.lit";
 import { SlotController } from "@inlinejs/inline-core";
 
 /**
- * The outline-card-group component.
- * @element outline-card-group
+ * The inline-grid component.
+ * @element inline-grid
  * @extends InlineElement
  *
+ * @example
+ * <inline-grid grid-template-columns="1fr 1fr 1fr 1fr">
+ *   <div></div>
+ *   <div></div>
+ *   <div></div>
+ *   <div></div>
+ * </inline-grid>
  *
  * @slot - The default slot.
  */
 
-@customElement("inline-card-group")
-export class InlineCardGroup extends InlineElement {
+@customElement("inline-grid")
+export class InlineGrid extends InlineElement {
   static styles: CSSResultGroup = [componentStyles];
   slots = new SlotController(
     this, // This, the host element.
@@ -89,6 +96,6 @@ export class InlineCardGroup extends InlineElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "inline-card-group": InlineCardGroup;
+    "inline-grid": InlineGrid;
   }
 }

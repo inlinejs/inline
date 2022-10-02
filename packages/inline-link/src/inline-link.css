@@ -1,3 +1,4 @@
+:host,
 a,
 ::slotted(a) {
   transition-property: var(
@@ -30,6 +31,7 @@ a,
   );
 }
 
+:host(:hover),
 a:hover,
 ::slotted(a:hover) {
   color: var(--inline-link-color-hover, var(--inline-link-color-hover-default));
@@ -40,6 +42,7 @@ a:hover,
   );
 }
 
+:host(:focus),
 a:focus,
 ::slotted(a:focus) {
   color: var(--inline-link-color-focus, var(--inline-link-color-focus-default));

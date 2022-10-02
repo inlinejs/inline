@@ -1,9 +1,9 @@
 {
-  "name": "@inlinejs/inline-card-group",
+  "name": "@inlinejs/inline-section-link",
   "version": "0.0.1",
-  "description": "Core functionality that is shared across all Inline Web Components",
+  "description": "Web Components utilized primarily in a component style guide.",
   "keywords": [
-    "web components",
+    "web-components",
     "design system"
   ],
   "main": "index.ts",
@@ -16,20 +16,21 @@
     "name": "Jake Strawn",
     "url": "https://github.com/himerus"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
-    "directory": "packages/inline-card-group"
+    "directory": "packages/inline-link-card"
   },
-  "license": "BSD-3-Clause",
   "scripts": {
     "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"
   },
   "dependencies": {
-    "@inlinejs/inline-config": "^0.0.1",
-    "lit": "^2.0.2"
+    "@inlinejs/inline-core": "^0.0.1",
+    "lit": "^2.0.2",
+    "tslib": "^2.1.0"
   },
   "publishConfig": {
     "access": "public"

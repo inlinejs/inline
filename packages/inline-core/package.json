@@ -16,12 +16,12 @@
     "name": "Jake Strawn",
     "url": "https://github.com/himerus"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
     "directory": "packages/inline-core"
   },
-  "license": "BSD-3-Clause",
   "scripts": {
     "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@inlinejs/inline-config": "^0.0.1",
+    "@inlinejs/inline-tokens": "^0.0.1",
     "lit": "^2.0.2"
   },
   "publishConfig": {

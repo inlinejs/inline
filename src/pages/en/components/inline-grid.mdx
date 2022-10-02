@@ -1,0 +1,32 @@
+---
+title: InlineGrid
+description: Documentation for the inline-grid component from @inlinejs/inline-link
+layout: ../../../layouts/MainLayout.astro
+---
+
+This page will walk through usage and samples of the `inline-grid` component.
+
+## Component Status
+
+<inline-alert alert-type="success" size="large" client:load>
+  <span slot="header">Status: Stable</span>
+  <div>This component is stable for production use.</div>
+</inline-alert>
+
+## Component Usage
+
+> The following example is using the `inline-grid` to contain a group of `inline-swatch` components.
+
+<inline-grid grid-template-columns="1fr 1fr">
+  <inline-swatch set="brand" color="primary"></inline-swatch>
+  <inline-swatch set="status" color="success"></inline-swatch>
+  <inline-swatch set="slate" color="200"></inline-swatch>
+</inline-grid>
+
+```html
+<inline-grid grid-template-columns="1fr 1fr">
+  <inline-swatch set="brand" color="primary"></inline-swatch>
+  <inline-swatch set="status" color="success"></inline-swatch>
+  <inline-swatch set="slate" color="200"></inline-swatch>
+</inline-grid>
+```

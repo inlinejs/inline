@@ -1,0 +1,21 @@
+.color {
+  margin-bottom: var(--spacing-2);
+  height: var(--spacing-16);
+  width: 100%;
+
+  /* @todo: update following rules with accurate variables. */
+  /* border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow); */
+
+  /* Pass a variable from the component. */
+  background-color: var(--swatch-color);
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.information--label {
+  font-weight: var(--fw-semibold);
+}

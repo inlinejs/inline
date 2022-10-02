@@ -18,12 +18,12 @@
     "name": "Jake Strawn",
     "url": "https://github.com/himerus"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
     "directory": "packages/inline-link"
   },
-  "license": "BSD-3-Clause",
   "scripts": {
     "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
@@ -36,6 +36,7 @@
     "access": "public"
   },
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./docs": "./README.md"
   }
 }

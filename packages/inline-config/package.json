@@ -13,8 +13,11 @@
   "files": [
     "*"
   ],
-  "author": "Phase2 Technology",
-  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Jake Strawn",
+    "url": "https://github.com/himerus"
+  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",

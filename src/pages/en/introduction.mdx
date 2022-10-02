@@ -12,6 +12,22 @@ import { InlineAlert } from "@inlinejs/inline-alert";
 
 > An attempt to demonstrate `@inlinejs` web components inside MDX.
 
+### `inline-swatch`
+
+<inline-grid grid-template-columns="1fr 1fr">
+  <inline-swatch set="brand" color="primary"></inline-swatch>
+  <inline-swatch set="status" color="success"></inline-swatch>
+  <inline-swatch set="slate" color="200"></inline-swatch>
+</inline-grid>
+
+```html
+<inline-grid grid-template-columns="1fr 1fr">
+  <inline-swatch set="brand" color="primary"></inline-swatch>
+  <inline-swatch set="status" color="success"></inline-swatch>
+  <inline-swatch set="slate" color="200"></inline-swatch>
+</inline-grid>
+```
+
 ### `inline-alert`
 
 <inline-alert statusType="warning" size="large" client:only>

@@ -57,6 +57,7 @@ export const SIDEBAR: Sidebar = {
     "Component Library": [
       { text: "InlineAlert", link: "en/components/inline-alert" },
       { text: "InlineLink", link: "en/components/inline-link" },
+      { text: "InlineGrid", link: "en/components/inline-grid" },
     ],
   },
 };

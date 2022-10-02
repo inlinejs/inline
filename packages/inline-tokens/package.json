@@ -14,12 +14,12 @@
     "name": "Jake Strawn",
     "url": "https://github.com/himerus"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
     "directory": "packages/inline-tokens"
   },
-  "license": "BSD-3-Clause",
   "scripts": {
     "build": "style-dictionary build --config ./config.json",
     "package": "yarn publish"

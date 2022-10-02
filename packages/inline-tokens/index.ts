@@ -1,6 +1,13 @@
 import { default as screenSizeTokens } from "./tokens/screens/base.json";
 import { default as baseColorTokens } from "./tokens/color/base.json";
+import { default as tailwindColorTokens } from "./tokens/color/tailwind.json";
 
+// @todo: Refactor to allow this to be dynamic.
+const allColors = Object.create({
+  color: Object.assign({}, baseColorTokens.color, tailwindColorTokens.color),
+});
+
+//const allColors = Object.assign({}, baseColorTokens, tailwindColorTokens);
 /**
  * Takes an object of Style Dictionary formatted tokens and returns
  * a new object without the required "value" key required in
@@ -38,3 +45,9 @@ export const brandColors = baseColorTokens.color.brand
 export const statusColors = baseColorTokens.color.status
   ? simpleTokenMapper(baseColorTokens.color.status)
   : {};
+
+/**
+ * Available color sets based on the tokens provided via the various
+ * JSON imports
+ */
+export const colorSets = allColors.color ? Object.keys(allColors.color) : [];

@@ -4,9 +4,18 @@ description: Documentation for the inline-alert component from @inlinejs/inline-
 layout: ../../../layouts/MainLayout.astro
 ---
 
+import Documentation from "@inlinejs/inline-link/docs";
+
 This page will walk through usage and samples of the `inline-link` component.
 
-## Component Usage Sample
+## Component Status
+
+<inline-alert alert-type="success" size="large" client:load>
+  <span slot="header">Status: Stable</span>
+  <p>This component is stable for production use.</p>
+</inline-alert>
+
+## Component Usage
 
 <ul>
   <li>
@@ -21,3 +30,7 @@ This page will walk through usage and samples of the `inline-link` component.
     <inline-link link-href="/" link-text="Link (All Properties)"></inline-link>
   </li>
 </ul>
+
+## Component Documentation
+
+<Documentation />

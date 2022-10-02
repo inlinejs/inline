@@ -21,7 +21,7 @@
     "url": "https://github.com/ininejs/inline.git",
     "directory": "packages/inline-alert"
   },
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "scripts": {
     "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"

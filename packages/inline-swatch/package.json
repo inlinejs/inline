@@ -1,17 +1,16 @@
 {
-  "name": "@inlinejs/inline-element",
+  "name": "@inlinejs/inline-swatch",
   "version": "0.0.1",
-  "description": "Primary Inline Component wrapper.",
+  "description": "Web Components utilized primarily in a component style guide.",
   "keywords": [
-    "inline",
-    "web components",
+    "web-components",
     "design system"
   ],
   "main": "index.ts",
   "types": "index.ts",
   "typings": "index.d.ts",
   "files": [
-    "*"
+    "/dist/"
   ],
   "author": {
     "name": "Jake Strawn",
@@ -21,14 +20,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/inlinejs/inline.git",
-    "directory": "packages/inline-element"
+    "directory": "packages/inline-swatch"
   },
   "scripts": {
     "prebuild": "node ../../scripts/clean.cjs",
     "build": "node ../../scripts/build.cjs",
     "package": "yarn publish"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@inlinejs/inline-core": "^0.0.1",
+    "lit": "^2.0.2",
+    "tslib": "^2.1.0"
+  },
   "publishConfig": {
     "access": "public"
   },
