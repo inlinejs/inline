@@ -2,7 +2,24 @@
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+- ✅ **Full Markdown support**
+- ✅ **Responsive mobile-friendly design**
+- ✅ **Sidebar navigation**
+- ✅ **Search (powered by Algolia)**
+- ✅ **Multi-language i18n**
+- ✅ **Automatic table of contents**
+- ✅ **Automatic list of contributors**
+- ✅ (and, best of all) **dark mode**
+
+## Primary Tools
+
+- ✅ [lit](https://lit.dev/)
+- ✅ [turborepo](https://turborepo.org/)
+- ✅ [astro](https://astro.build/)
+- ✅ [netlify](https://www.netlify.com/) - More updates to come here
+
+
+Inside of your InlineJS project, you'll see the following folders and files:
 
 ```txt
 /
