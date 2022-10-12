@@ -1,4 +1,4 @@
-# Welcome to [InineJS](https://github.com/inlinejs/inline)
+# Welcome to [InlineJS](https://github.com/inlinejs/inline)
 
 ## 🚀 Project Structure
 
